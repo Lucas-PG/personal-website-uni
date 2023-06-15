@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Bellefair', serif;
+  background-color: #0d0d0d;
+}
+
+header{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#b7ab98;
+  margin-top: 10px;
+}
+
+.back-option {
+  position: fixed;
+  color: #b7ab98;
+  top: 50px;
+  left: 50px;
+}
+
+
+header i,
+footer i {
+  color: #b7ab98;
+}
+
+.back-left {
+  margin-left: 75px;
+}
+
+.forward-right {
+  margin-right: 75px
+}
+
+header h3 {
+  font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  padding: 0;
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-row-project {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  justify-content: start;
+  align-items: center;
+  color: #b7ab98;
+}
+
+.first-row-project img {
+  width: 50vw;
+  height: 30vw;
+  margin-bottom: 50px;
+}
+
+.text-first-row,
+.text-second-row,
+.text-third-row {
+  width: 50vw;
+  line-height: 40px;
+  font-weight: 300;
+  font-size: 26px;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+footer {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#b7ab98;
+  margin-top: 10px;
+}
+
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  text-decoration: none;
+}
+
+.right-footer {
+  margin-right: 15px;
+  font-size: 20px;
+    color: #b7ab98;
+}
+
+.left-footer {
+  color: #b7ab98;
+  font-size: 20px;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #eb5939;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .07s;
+  z-index: 100;
+}
+
+.cursor2 {
+  position: fixed;
+  width: 4px;
+  height: 4px;
+  border: 1px solid #eb5939;
+  background-color: #eb5939;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: .01s;
+  z-index: 100;
+}
