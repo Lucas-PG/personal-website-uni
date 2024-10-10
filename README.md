@@ -1,3 +1,3 @@
-# Website Pessoal Feito para Universidade
+# Website pessoal feito para universidade
 
-Esse website foi feito no primeiro período da universidade, mostrando os outros projetos nele desenvolvidos.
+Este website foi feito no primeiro período da universidade, mostrando os outros projetos nele desenvolvidos.
