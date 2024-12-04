@@ -382,7 +382,7 @@ main {
   border-bottom: 2px solid #292828;
   border-top: 2px solid #292828;
   height: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .reviews-first-text h3,

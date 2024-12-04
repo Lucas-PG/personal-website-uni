@@ -1,211 +1,247 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Mono:wght@200;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="index.js" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto+Mono:wght@200;400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
-  <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
-  <title>Lucas Gasperin</title>
-</head>
+    <script
+      src="https://kit.fontawesome.com/fb32a93e05.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/fb32a93e05.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <title>Lucas Gasperin</title>
+  </head>
 
-<body>
-  <header id="header">
-    <div class="header-container">
-      <div class="logo">
-        <p class="name-logo">Lucas P. Gasperin</p>
-        <p class="underline-logo">_</p>
-      </div>
-      <div class="about-itens-header nav-item">
-        <div class="div-about nav-item">
-          <div class="first-about">
-            <a onclick="scrollToTop()" id="firstAbout">SOBRE</a>
+  <body>
+    <header id="header">
+      <div class="header-container">
+        <div class="logo">
+          <p class="name-logo">Lucas P. Gasperin</p>
+          <p class="underline-logo">_</p>
+        </div>
+        <div class="about-itens-header nav-item">
+          <div class="div-about nav-item">
+            <div class="first-about">
+              <a onclick="scrollToTop()" id="firstAbout">SOBRE</a>
+            </div>
+            <a class="second-about" onclick="scrollToTop()"> SOBRE </a>
           </div>
-          <a class="second-about" onclick="scrollToTop()">
-            SOBRE
+          <div class="div-work nav-item">
+            <div class="first-work">
+              <a onclick="smoothScroll('projects-div')">PROJETOS</a>
+            </div>
+            <a onclick="smoothScroll('projects-div')" class="second-work">
+              PROJETOS
+            </a>
+          </div>
+          <div class="div-contact nav-item">
+            <div class="first-contact">
+              <a onclick="smoothScroll('contact-div')">CONTATO</a>
+            </div>
+            <a class="second-contact" onclick="smoothScroll('contact-div')"
+              >CONTATO</a
+            >
+          </div>
+        </div>
+      </div>
+      <section class="section-header">
+        <div class="header-section-text">
+          <h3>
+            Lucas é um estudante de <br />computação na <span>PucPR</span>,
+            <br />atualmente no <span>1º período</span>
+          </h3>
+
+          <p>Ciência da Computação & Web-Design</p>
+        </div>
+        <div class="header-section-img">
+          <img class="rome-image" src="images/rome-cs - cópia.jpeg" />
+        </div>
+      </section>
+    </header>
+    <div class="dividing-div-header-main" id="dividingLine">
+      <div class="dividing-line1-header-main"></div>
+      <div class="x-dividing-header-main">
+        <img src="images/x-image - cópia.svg" />
+      </div>
+      <div class="dividing-line2-header-main"></div>
+    </div>
+    <main>
+      <div class="socials-logos cursor-hover">
+        <a href="#">
+          <i class="fa-solid fa-globe fa-lg"></i>
+        </a>
+        <a
+          href="https://instagram.com/lucas_gaspe?igshid=MjEwN2IyYWYwYw=="
+          target="_blank"
+        >
+          <i class="fa-brands fa-instagram fa-lg"></i>
+        </a>
+        <a href="http://wa.me//5541991311004" target="_blank">
+          <i class="fa-brands fa-whatsapp fa-lg"></i>
+        </a>
+        <a href="mailto:luscagape@gmail.com">
+          <i class="fa-regular fa-envelope fa-lg"></i>
+        </a>
+      </div>
+      <div class="about-me">
+        <div class="design">
+          <h3>Design</h3>
+          <p>
+            Um website atraente é a base de qualquer negócio bem-sucedido. Um
+            excelente marketing começa com um excelente website
+          </p>
+        </div>
+        <div class="development">
+          <h3>Desenvolvimento</h3>
+          <p>
+            Focado em interações e detalhes que tornam o seu design ainda mais
+            atraente. Crio projetos com elementos únicos e
+          </p>
+        </div>
+        <div class="full-stack">
+          <h3>Full Stack</h3>
+          <p>
+            Possui um projeto em mente e deseja ajuda para implementá-lo? Crio
+            um website completo com um incrível design e desenvolvimento.
+          </p>
+        </div>
+      </div>
+      <section class="projects-sct nav-item" id="projects-div">
+        <div class="projects-info">
+          <a href="projects/game-project/index.html" class="game-project-div">
+            <div class="project-game">
+              <span>MARÇO</span>
+              <div class="text-game-div">
+                <h3>PROJETO JOGO</h3>
+              </div>
+            </div>
+            <div class="project-game-secondary">
+              <span>MARÇO</span>
+              <div class="text-game-div">
+                <h3>PROJETO JOGO</h3>
+              </div>
+            </div>
+          </a>
+          <a class="jkp-project-div" href="projects/JKP-project/index.html">
+            <div class="project-jkp">
+              <span>ABRIL</span>
+              <div class="text-jkp-div">
+                <h3>PROJETO JO-KEN-PO</h3>
+              </div>
+            </div>
+            <div class="project-jkp-secondary">
+              <span>ABRIL</span>
+              <div class="text-jkp-div">
+                <h3>PROJETO JO-KEN-PO</h3>
+              </div>
+            </div>
+          </a>
+          <a class="app-project-div" href="projects/APP-project/index.html">
+            <div class="project-app">
+              <span>MAIO</span>
+              <div class="text-app-div">
+                <h3>PROJETO APP</h3>
+              </div>
+            </div>
+            <div class="project-app-secondary">
+              <span>MAIO</span>
+              <div class="text-app-div">
+                <h3>PROJETO APP</h3>
+              </div>
+            </div>
+          </a>
+          <a class="web-project-div" href="projects/web-project/index.html">
+            <div class="project-website">
+              <span>JUNHO</span>
+              <div class="text-web-div">
+                <h3>PROJETO WEB</h3>
+              </div>
+            </div>
+            <div class="project-web-secondary">
+              <span>JUNHO</span>
+              <div class="text-web-div">
+                <h3>PROJETO WEB</h3>
+              </div>
+            </div>
           </a>
         </div>
-        <div class="div-work nav-item">
-          <div class="first-work">
-            <a onclick="smoothScroll('projects-div')">PROJETOS</a>
+      </section>
+      <div class="reviews-section">
+        <div class="first-review-div nav-item">
+          <div class="primary-first-review">
+            <h3>
+              "A cada design que ele<br />
+              apresenta ele fica melhor!"
+            </h3>
+            <p>-gestora de projetos imobiliários</p>
           </div>
-          <a onclick="smoothScroll('projects-div')" class="second-work">
-            PROJETOS
-          </a>
+          <div class="secondary-first-review">
+            <h3>
+              "Tudo que eu quero<br />
+              é que ele arrume emprego"
+            </h3>
+            <p>-Mãe de Lucas Gasperin</p>
+          </div>
         </div>
-        <div class="div-contact nav-item">
-          <div class="first-contact">
-            <a onclick="smoothScroll('contact-div')">CONTATO</a>
+        <div class="second-review-div nav-item">
+          <div class="primary-second-review">
+            <h3>
+              "Os projetos dele são<br />excelentes, ele é uma<br />máquina"
+            </h3>
+            <p>-cientista da computação</p>
           </div>
-          <a class="second-contact" onclick="smoothScroll('contact-div')">CONTATO</a>
+          <div class="secondary-second-review">
+            <h3>"Ele me forçou<br />a dizer isso."</h3>
+            <p>-colega de Lucas Gasperin</p>
+          </div>
         </div>
-      </div>
-    </div>
-    <section class="section-header">
-      <div class="header-section-text">
-        <h3>Lucas é um estudante de <br>computação na <span>PucPR</span>, <br>atualmente no <span>1º período</span>
-        </h3>
-
-        <p>Ciência da Computação & Web-Design</p>
-      </div>
-      <div class="header-section-img">
-        <img class="rome-image" src="images/rome-cs - cópia.jpeg">
-      </div>
-    </section>
-  </header>
-  <div class="dividing-div-header-main" id="dividingLine">
-    <div class="dividing-line1-header-main"></div>
-    <div class="x-dividing-header-main">
-      <img src="images/x-image - cópia.svg">
-    </div>
-    <div class="dividing-line2-header-main"></div>
-  </div>
-  <main>
-    <div class="socials-logos cursor-hover">
-      <a href="#">
-        <i class="fa-solid fa-globe fa-lg"></i>
-      </a>
-      <a href="https://instagram.com/lucas_gaspe?igshid=MjEwN2IyYWYwYw==" target="_blank">
-        <i class="fa-brands fa-instagram fa-lg"></i>
-      </a>
-      <a href="http://wa.me//5541991311004" target="_blank">
-        <i class="fa-brands fa-whatsapp fa-lg"></i>
-      </a>
-      <a href="mailto:luscagape@gmail.com">
-        <i class="fa-regular fa-envelope fa-lg"></i>
-      </a>
-    </div>
-    <div class="about-me">
-      <div class="design">
-        <h3>Design</h3>
-        <p>Um website atraente é a base de qualquer negócio bem-sucedido. Um excelente marketing começa com um excelente
-          website </p>
-      </div>
-      <div class="development">
-        <h3>Desenvolvimento</h3>
-        <p>Focado em interações e detalhes que tornam o seu design ainda mais atraente. Crio projetos com elementos
-          únicos e </p>
-      </div>
-      <div class="full-stack">
-        <h3>Full Stack </h3>
-        <p>Possui um projeto em mente e deseja ajuda para implementá-lo? Crio um website completo com um incrível design
-          e desenvolvimento.</p>
-      </div>
-    </div>
-    <section class="projects-sct nav-item" id="projects-div">
-      <div class="projects-info">
-        <a href="projects/game-project/index.html" class="game-project-div">
-          <div class="project-game">
-            <span>MARÇO</span>
-            <div class="text-game-div">
-              <h3>PROJETO JOGO</h3>
-            </div>
+        <div class="third-review-div nav-item">
+          <div class="primary-third-review">
+            <h3>
+              "Trabalho incrível! <br />Queria poder recomenda-lo<br />mais de
+              uma vez"
+            </h3>
+            <p>-Web designer</p>
           </div>
-          <div class="project-game-secondary">
-            <span>MARÇO</span>
-            <div class="text-game-div">
-              <h3>PROJETO JOGO</h3>
-            </div>
+          <div class="secondary-third-review">
+            <h3>
+              "Por favor me<br />Contrate, estou atualmente<br />desempregado"
+            </h3>
+            <p>-Segunda conta de<br />Lucas Gasperin</p>
           </div>
-        </a>
-        <a class="jkp-project-div" href="projects/JKP-project/index.html">
-          <div class="project-jkp">
-            <span>ABRIL</span>
-            <div class="text-jkp-div">
-              <h3>PROJETO JO-KEN-PO</h3>
-            </div>
-          </div>
-          <div class="project-jkp-secondary">
-            <span>ABRIL</span>
-            <div class="text-jkp-div">
-              <h3>PROJETO JO-KEN-PO</h3>
-            </div>
-          </div>
-        </a>
-        <a class="app-project-div" href="projects/APP-project/index.html">
-          <div class="project-app">
-            <span>MAIO</span>
-            <div class="text-app-div">
-              <h3>PROJETO APP</h3>
-            </div>
-          </div>
-          <div class="project-app-secondary">
-            <span>MAIO</span>
-            <div class="text-app-div">
-              <h3>PROJETO APP</h3>
-            </div>
-          </div>
-        </a>
-        <a class="web-project-div" href="projects/web-project/index.html">
-          <div class="project-website">
-            <span>JUNHO</span>
-            <div class="text-web-div">
-              <h3>PROJETO WEB</h3>
-            </div>
-          </div>
-          <div class="project-web-secondary">
-            <span>JUNHO</span>
-            <div class="text-web-div">
-              <h3>PROJETO WEB</h3>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-    <div class="reviews-section">
-      <div class="first-review-div nav-item">
-        <div class="primary-first-review">
-          <h3>"A cada design que ele<br> apresenta ele fica melhor!"</h3>
-          <p>-gestora de projetos imobiliários</p>
-        </div>
-        <div class="secondary-first-review">
-          <h3>"Tudo que eu quero<br> é que ele arrume emprego"</h3>
-          <p>-Mãe de Lucas Gasperin</p>
         </div>
       </div>
-      <div class="second-review-div nav-item">
-        <div class="primary-second-review">
-          <h3>"Os projetos dele são<br>excelentes, ele é uma<br>máquina"</h3>
-          <p>-cientista da computação</p>
-        </div>
-        <div class="secondary-second-review">
-          <h3>"Ele me forçou<br>a dizer isso."</h3>
-          <p>-colega de Lucas Gasperin</p>
-        </div>
+    </main>
+    <footer id="contact-div">
+      <div class="work-together footer-div">
+        <h4>Vamos Trabalhar Juntos?</h4>
       </div>
-      <div class="third-review-div nav-item">
-        <div class="primary-third-review">
-          <h3>"Trabalho incrível! <br>Queria poder recomenda-lo<br>mais de uma vez"</h3>
-          <p>-Web designer</p>
-        </div>
-        <div class="secondary-third-review">
-          <h3>"Por favor me<br>Contrate, estou atualmente<br>desempregado"</h3>
-          <p>-Segunda conta de<br>Lucas Gasperin</p>
-        </div>
+      <div class="line-div"></div>
+      <div class="contact-info-footer footer-div">
+        <i class="fa-solid fa-left-long fa-2x"></i>
+        <span>informações de contato</span>
       </div>
-    </div>
-  </main>
-  <footer id="contact-div">
-    <div class="work-together footer-div">
-      <h4>Vamos Trabalhar Juntos?</h4>
-    </div>
-    <div class="line-div"></div>
-    <div class="contact-info-footer footer-div">
-      <i class="fa-solid fa-left-long fa-2x"></i>
-      <span>informações de contato</span>
-    </div>
-  </footer>
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor2" id="cursor2"></div>
-</body>
-
+    </footer>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor2" id="cursor2"></div>
+  </body>
 </html>
+
